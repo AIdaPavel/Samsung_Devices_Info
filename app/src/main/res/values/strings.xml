@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Samsung Devices Info</string>
+    <string name="accessories">Аксессуары</string>
+    <string name="tablets">Планшеты</string>
+    <string name="smartphones">Смартфоны</string>
+    <string name="laptops">Ноутбуки</string>
 </resources>
