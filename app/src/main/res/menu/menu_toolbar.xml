@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/accessories"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/tablets"
+        android:icon="@drawable/ic_search"
+        android:title="@string/tablets"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/smartphones"
+        android:icon="@drawable/ic_search"
+        android:title="@string/smartphones"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/laptops"
+        android:icon="@drawable/ic_search"
+        android:title="@string/laptops"
+        app:showAsAction="never" />
+</menu>

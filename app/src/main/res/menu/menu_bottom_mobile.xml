@@ -3,21 +3,22 @@
     <item
         android:id="@+id/accessories"
         android:icon="@drawable/ic_accessories"
+        android:iconTint="#BCBCBC"
         android:title="@string/accessories" />
 
     <item
         android:id="@+id/tablets"
-        android:icon="@drawable/ic_accessories"
+        android:icon="@drawable/ic_tablet"
         android:title="@string/tablets" />
 
     <item
         android:id="@+id/smartphones"
-        android:icon="@drawable/ic_accessories"
+        android:icon="@drawable/ic_smartphone"
         android:title="@string/smartphones" />
 
     <item
         android:id="@+id/laptops"
-        android:icon="@drawable/ic_accessories"
+        android:icon="@drawable/ic_laptop"
         android:title="@string/laptops" />
 
 </menu>
