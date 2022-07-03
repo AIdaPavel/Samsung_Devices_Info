@@ -12,8 +12,12 @@
         android:id="@+id/toolbarActivityMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_200"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:background="#41B8B8B8"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/menu_toolbar"
+        app:title="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/containerActivityMain"

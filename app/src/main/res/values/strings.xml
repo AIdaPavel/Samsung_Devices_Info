@@ -4,4 +4,11 @@
     <string name="tablets">Планшеты</string>
     <string name="smartphones">Смартфоны</string>
     <string name="laptops">Ноутбуки</string>
+    <string name="mobile">Мобильные устройства</string>
+    <string name="search">Поиск</string>
+    <string name="small_household_appliances">МБТ</string>
+    <string name="tv">Телевизоры</string>
+    <string name="large_home_appliances">КБТ</string>
+    <string name="support">Помощь</string>
+    <string name="settings">Настройки</string>
 </resources>

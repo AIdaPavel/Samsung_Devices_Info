@@ -16,12 +16,6 @@ class MainActivity : AppCompatActivity() {
         bindingActivityMain = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingActivityMain.root)
 
-        //Удаление строки состояния
-        this.window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
-
         if (savedInstanceState == null) {
             //Подключение главного фрагмента
             supportFragmentManager
