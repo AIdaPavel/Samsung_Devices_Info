@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/search"
         android:icon="@drawable/ic_search"
-        android:title="@string/accessories"
+        android:title="@string/search"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/tablets"
-        android:icon="@drawable/ic_search"
-        android:title="@string/tablets"
+        android:id="@+id/mobile"
+        android:icon="@drawable/ic_smartphone"
+        android:title="@string/mobile"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/smartphones"
-        android:icon="@drawable/ic_search"
-        android:title="@string/smartphones"
+        android:id="@+id/tv"
+        android:icon="@drawable/ic_tv"
+        android:title="@string/tv"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/laptops"
+        android:id="@+id/kbt"
         android:icon="@drawable/ic_search"
-        android:title="@string/laptops"
+        android:title="@string/large_home_appliances"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mbt"
+        android:icon="@drawable/ic_small_household_appliances"
+        android:title="@string/small_household_appliances"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/ic_support"
+        android:title="@string/support"
+        app:showAsAction="never" />
+
 </menu>
