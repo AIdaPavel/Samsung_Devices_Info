@@ -1,7 +1,8 @@
-package pavel.ivanov.samsungdevicesinfo
+package pavel.ivanov.samsungdevicesinfo.ui.main.adapters.navadapters
 
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import pavel.ivanov.samsungdevicesinfo.R
 
 class BottomNavigationAdapter(
     private val bottomNavigationView: BottomNavigationView,

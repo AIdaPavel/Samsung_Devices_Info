@@ -1,8 +1,11 @@
-package pavel.ivanov.samsungdevicesinfo
+package pavel.ivanov.samsungdevicesinfo.ui.main.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import pavel.ivanov.samsungdevicesinfo.R
 import pavel.ivanov.samsungdevicesinfo.databinding.ActivityMainBinding
+import pavel.ivanov.samsungdevicesinfo.ui.main.adapters.navadapters.BottomNavigationAdapter
+import pavel.ivanov.samsungdevicesinfo.ui.main.adapters.navadapters.ViewPagerMainActivityAdapter
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bindingActivityMain: ActivityMainBinding //Обращение к элементам View через Binding
