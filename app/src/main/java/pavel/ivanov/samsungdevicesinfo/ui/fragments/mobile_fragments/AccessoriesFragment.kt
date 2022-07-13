@@ -1,4 +1,4 @@
-package pavel.ivanov.samsungdevicesinfo.ui.mobile_fragments
+package pavel.ivanov.samsungdevicesinfo.ui.fragments.mobile_fragments
 
 import androidx.fragment.app.Fragment
 import pavel.ivanov.samsungdevicesinfo.R

@@ -1,41 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".ui.main.view.MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarActivityMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#41B8B8B8"
-        app:itemTextColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:menu="@menu/menu_toolbar"
-        app:title="@string/app_name" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPagerActivityMain"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationMobile"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarActivityMain" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationMobile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemIconTint="@drawable/buttom_nav_selector"
-        app:itemTextColor="@color/black"
-        app:labelVisibilityMode="selected"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu_bottom_mobile" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

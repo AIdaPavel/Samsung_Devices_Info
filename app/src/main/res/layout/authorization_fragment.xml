@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLogin"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/registration_text_size_24sp"
+        android:layout_margin="@dimen/registration_padding_8dp"
+        android:hint="@string/login"
+        app:endIconMode="clear_text"
+        app:helperText="@string/enter_user_name"
+        app:counterEnabled="true"
+        app:counterMaxLength="20">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="20"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/registration_text_size_24sp"
+        android:layout_margin="@dimen/registration_padding_8dp"
+        android:hint="@string/password"
+        app:endIconMode="password_toggle"
+        app:helperText="@string/enter_your_password"
+        app:counterEnabled="true"
+        app:counterMaxLength="15">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginToAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/registration_text_size_24sp"
+        android:layout_margin="@dimen/registration_padding_8dp"
+        android:text="@string/enter" />
+
+    <TextView
+        android:id="@+id/registrationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/registration_padding_8dp"
+        android:hint="@string/text_registration_new_user"/>
+
+</LinearLayout>

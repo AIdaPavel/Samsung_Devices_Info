@@ -1,4 +1,4 @@
-package pavel.ivanov.samsungdevicesinfo.ui.main.adapters.navadapters
+package pavel.ivanov.samsungdevicesinfo.ui.main.adapters.nav_adapters
 
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
