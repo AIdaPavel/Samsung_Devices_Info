@@ -11,4 +11,15 @@
     <string name="large_home_appliances">КБТ</string>
     <string name="support">Помощь</string>
     <string name="settings">Настройки</string>
+    <string name="login">Имя пользователя</string>
+    <string name="password">Пароль</string>
+    <string name="password_repeat">Повторите пароль</string>
+    <string name="enter_email">Укажите почту</string>
+    <string name="registration_btn">Зарегистрироваться</string>
+    <string name="enter">Войти</string>
+    <string name="text_registration_new_user">Зарегистрироваться</string>
+    <string name="enter_user_name">Введите имя пользователя</string>
+    <string name="enter_your_password">Введите пароль</string>
+    <string name="email">Почта</string>
+    <string name="enter_your_password_repeat">Повторите пароль</string>
 </resources>

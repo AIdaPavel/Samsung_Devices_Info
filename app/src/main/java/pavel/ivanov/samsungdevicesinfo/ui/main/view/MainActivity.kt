@@ -1,14 +1,16 @@
 package pavel.ivanov.samsungdevicesinfo.ui.main.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import pavel.ivanov.samsungdevicesinfo.R
 import pavel.ivanov.samsungdevicesinfo.databinding.ActivityMainBinding
-import pavel.ivanov.samsungdevicesinfo.ui.main.adapters.navadapters.BottomNavigationAdapter
-import pavel.ivanov.samsungdevicesinfo.ui.main.adapters.navadapters.ViewPagerMainActivityAdapter
+import pavel.ivanov.samsungdevicesinfo.ui.fragments.authorization_fragments.AuthorizationFragment
+import pavel.ivanov.samsungdevicesinfo.ui.fragments.authorization_fragments.LogInFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bindingActivityMain: ActivityMainBinding //Обращение к элементам View через Binding
+
+    private var isLogin = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,17 +19,14 @@ class MainActivity : AppCompatActivity() {
         bindingActivityMain = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingActivityMain.root)
 
-        //Подключаем ViewPager
-        val viewPagerMainActivityAdapter = ViewPagerMainActivityAdapter(this)
-        bindingActivityMain.viewPagerActivityMain.adapter = viewPagerMainActivityAdapter
-
-        //Подключаем BottomNavigation
-        val bottomNavigationAdapter =
-            BottomNavigationAdapter(bindingActivityMain.bottomNavigationMobile,
-                bindingActivityMain.viewPagerActivityMain)
-        bottomNavigationAdapter.setFragment()
-
-        //Устанавливаем стартовую страницу со вкладки "Смартфоны"
-        bindingActivityMain.bottomNavigationMobile.selectedItemId = R.id.smartphones
+        if (isLogin) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, LogInFragment(this))
+                .commit()
+        } else {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, AuthorizationFragment(this))
+                .commit()
+        }
     }
 }
